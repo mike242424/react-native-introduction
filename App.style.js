@@ -2,19 +2,10 @@ import { StyleSheet } from 'react-native';
 
 export const style = StyleSheet.create({
   container: {
-    backgroundColor: 'red',
     flex: 1,
+    flexDirection: 'row',
   },
-  viewOne: {
-    backgroundColor: 'blue',
-    flex: 1,
-  },
-  viewTwo: {
-    backgroundColor: 'green',
-    flex: 3,
-  },
-  viewThree: {
-    backgroundColor: 'purple',
-    flex: 1.5,
-  },
+  boxOne: { height: 100, width: 100, backgroundColor: 'red' },
+  boxTwo: { height: 100, width: 100, backgroundColor: 'blue' },
+  boxThree: { height: 100, width: 100, backgroundColor: 'green' },
 });

@@ -7,9 +7,9 @@ const App = () => {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={style.container}>
-        <View style={style.viewOne} />
-        <View style={style.viewTwo} />
-        <View style={style.viewThree} />
+        <View style={style.boxOne} />
+        <View style={style.boxTwo} />
+        <View style={style.boxThree} />
       </SafeAreaView>
     </SafeAreaProvider>
   );
