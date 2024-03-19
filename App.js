@@ -1,12 +1,14 @@
 import { Text, View } from 'react-native';
-import Profile from './components/Profile';
+// import Profile from './components/Profile';
+import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 
 const App = () => {
   return (
-    <View style={{ alignItems: 'center', paddingTop: 100 }}>
-      <Text>Hello</Text>
-      <Profile />
-    </View>
+    <SafeAreaProvider>
+      <SafeAreaView>
+        <Text>Hello</Text>
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 };
 
