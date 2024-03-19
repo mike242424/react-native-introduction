@@ -3,10 +3,19 @@ import { StyleSheet } from 'react-native';
 export const style = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-end',
   },
-  boxOne: { height: 100, width: 100, backgroundColor: 'red' },
-  boxTwo: { height: 100, width: 100, backgroundColor: 'blue' },
+  boxOne: {
+    height: 100,
+    width: 100,
+    backgroundColor: 'red',
+    alignSelf: 'flex-start',
+  },
+  boxTwo: {
+    height: 100,
+    width: 100,
+    backgroundColor: 'blue',
+    alignSelf: 'center',
+  },
   boxThree: { height: 100, width: 100, backgroundColor: 'green' },
 });
