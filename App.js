@@ -6,7 +6,11 @@ import { style } from './App.style';
 const App = () => {
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={style.container}></SafeAreaView>
+      <SafeAreaView style={style.container}>
+        <View style={style.viewOne} />
+        <View style={style.viewTwo} />
+        <View style={style.viewThree} />
+      </SafeAreaView>
     </SafeAreaProvider>
   );
 };
