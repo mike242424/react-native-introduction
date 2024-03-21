@@ -3,6 +3,7 @@ import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { style } from './App.style';
 import ProfileCard from './components/ProfileCard/ProfileCard';
 import { useState } from 'react';
+import Counter from './components/Counter/Counter';
 
 const App = () => {
   const [data, setData] = useState();
@@ -10,7 +11,7 @@ const App = () => {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={style.container}>
-        <ProfileCard
+        {/* <ProfileCard
           name="Mike"
           message={
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus at sunt.'
@@ -23,7 +24,8 @@ const App = () => {
             'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil eius aperiam, natus dolore cum pariatur.'
           }
           isOpenToWork={false}
-        />
+        /> */}
+        <Counter />
       </SafeAreaView>
     </SafeAreaProvider>
   );
