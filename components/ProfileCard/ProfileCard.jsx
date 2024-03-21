@@ -2,7 +2,8 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { style } from './ProfileCard.style';
 import { AntDesign } from '@expo/vector-icons';
 
-const Profile = () => {
+const Profile = (props, { name, message }) => {
+  console.log(props);
   return (
     <View style={style.container}>
       <View style={style.header}>
@@ -13,12 +14,9 @@ const Profile = () => {
           />
         </View>
         <View style={style.text}>
-          <Text style={style.title}>Title</Text>
+          <Text style={style.title}>{name}</Text>
 
-          <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-            in facilis. Asperiores debitis dicta numquam!
-          </Text>
+          <Text>{message}</Text>
         </View>
       </View>
 
