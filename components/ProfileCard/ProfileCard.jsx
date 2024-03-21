@@ -2,18 +2,19 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { style } from './ProfileCard.style';
 import { AntDesign } from '@expo/vector-icons';
 
-const Profile = ({ name, message, isOpenToWork }) => {
+const Profile = ({ name, message, isOpenToWork, onPressTitle }) => {
   return (
     <View style={style.container}>
       <View style={style.header}>
-        <View>
-          <Image
-            style={style.image}
-            source={{ uri: 'https://i.pravatar.cc/300' }}
-          />
-        </View>
+        <Image
+          style={style.image}
+          source={{ uri: 'https://i.pravatar.cc/300' }}
+        />
+
         <View style={style.text}>
-          <Text style={style.title}>{name}</Text>
+          <TouchableOpacity onPress={() => onPressTitle(name)}>
+            <Text style={style.title}>{name}</Text>
+          </TouchableOpacity>
 
           <Text>{message}</Text>
 
